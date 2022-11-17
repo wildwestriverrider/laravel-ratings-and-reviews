@@ -18,8 +18,13 @@ class LaravelRatingsAndReviewsServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-ratings-and-reviews')
             ->hasConfigFile()
-            //->hasViews()
             ->hasMigration('create_ratings_and_reviews_table');
             //->hasCommand(LaravelRatingsAndReviewsCommand::class);
+    }
+
+    public function packageRegistered()
+    {
+
+        //$this->register()
     }
 }

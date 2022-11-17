@@ -2,7 +2,6 @@
 
 use Illuminate\Database\QueryException;
 use Wildwestriverrider\LaravelRatingsAndReviews\Tests\User;
-use function Pest\Laravel\assertDatabaseHas;
 use function PHPUnit\Framework\assertEquals;
 
 test('users can create ratings', function () {
@@ -28,7 +27,6 @@ test('users can create one rating per rateable', function () {
         'rateable_type' => get_class($otherUser),
         'rating' => 3
     ]);
-
 
     expect(fn() => $user->ratingsGiven()->create([
         'rateable_id' => $otherUser->id,

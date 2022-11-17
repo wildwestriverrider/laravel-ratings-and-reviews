@@ -5,7 +5,10 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/wildwestriverrider/laravel-ratings-and-reviews/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/wildwestriverrider/laravel-ratings-and-reviews/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/wildwestriverrider/laravel-ratings-and-reviews.svg?style=flat-square)](https://packagist.org/packages/wildwestriverrider/laravel-ratings-and-reviews)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Ratings and Reviews for Laravel projects.
+
+Requirements:
+Laravel 9+
 
 ## Support us
 
