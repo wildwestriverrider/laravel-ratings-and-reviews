@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "wildwestriverrider/laravel-ratings-and-reviews",
+    "description": "Ratings and reviews in Laravel 9+",
     "keywords": [
-        ":vendor_name",
+        "wildwestriverrider",
         "laravel",
-        ":package_slug"
+        "laravel-ratings-and-reviews"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/wildwestriverrider/laravel-ratings-and-reviews",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "James Sweeney",
+            "email": "wildwestriverrider@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Wildwestriverrider\\LaravelRatingsAndReviews\\": "src",
+            "Wildwestriverrider\\LaravelRatingsAndReviews\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Wildwestriverrider\\LaravelRatingsAndReviews\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,15 +51,19 @@
         "format": "vendor/bin/pint"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Wildwestriverrider\\LaravelRatingsAndReviews\\LaravelRatingsAndReviewsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelRatingsAndReviews": "Wildwestriverrider\\LaravelRatingsAndReviews\\Facades\\LaravelRatingsAndReviews"
             }
         }
     },

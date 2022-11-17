@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('ratings', function (Blueprint $table) {
+            $table->id();
+            $table->integer('rating');
+            $table->morphs('rateable');
+            $table->morphs('author');
+            $table->timestamps();
+
+            $table->unique(['rateable_id', 'rateable_type', 'author_id', 'author_type'], 'unq_author_rating');
+        });
+
+        Schema::create('reviews', function (Blueprint $table) {
+            $table->id();
+            $table->morphs('reviewable');
+            $table->morphs('author');
+            $table->text('content');
+            $table->boolean('approved')->default(false);
+            $table->timestamps();
+
+            $table->unique(['reviewable_id', 'reviewable_type', 'author_id', 'author_type'], 'unq_author_review');
+        });
+    }
+};
