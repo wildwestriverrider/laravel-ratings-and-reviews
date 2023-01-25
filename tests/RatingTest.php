@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\QueryException;
 use Wildwestriverrider\LaravelRatingsAndReviews\Tests\User;
+use function Pest\Laravel\actingAs;
 use function PHPUnit\Framework\assertEquals;
 
 test('users can create ratings', function () {
@@ -55,6 +57,20 @@ test('rateables have an average rating', function () {
 
 
     expect($otherUser->averageRating())->toEqual(2);
+});
+
+test('users can only delete ratings they created', function () {
+    $user = User::factory()->create();
+    $otherUser = User::factory()->create();
+
+    $rating = $user->ratingsGiven()->create([
+        'rateable_id' => $otherUser->id,
+        'rateable_type' => get_class($otherUser),
+        'rating' => 3
+    ]);
+
+    actingAs($otherUser);
+    expect(fn() => $rating->delete())->toThrow(AuthorizationException::class);
 });
 
 

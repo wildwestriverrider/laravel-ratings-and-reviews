@@ -2,6 +2,7 @@
 
 namespace Wildwestriverrider\LaravelRatingsAndReviews;
 
+use Illuminate\Support\Facades\Gate;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Wildwestriverrider\LaravelRatingsAndReviews\Commands\LaravelRatingsAndReviewsCommand;
@@ -22,9 +23,14 @@ class LaravelRatingsAndReviewsServiceProvider extends PackageServiceProvider
             //->hasCommand(LaravelRatingsAndReviewsCommand::class);
     }
 
-    public function packageRegistered()
+    public function boot()
     {
+        Gate::define('delete-rating', function ($user, $rating) {
+            return $user->is($rating->author);
+        });
 
-        //$this->register()
+        Gate::define('delete-review', function ($user, $review) {
+            return $user->is($review->author);
+        });
     }
 }
