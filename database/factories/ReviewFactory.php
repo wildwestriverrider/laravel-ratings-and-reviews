@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Auth\User;
 use Wildwestriverrider\LaravelRatingsAndReviews\Models\Review;
 
-
 class ReviewFactory extends Factory
 {
     protected $model = Review::class;
