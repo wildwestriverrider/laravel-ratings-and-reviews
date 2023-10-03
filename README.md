@@ -1,19 +1,11 @@
-# Ratings and reviews in Laravel 9+
+# Ratings and reviews in Laravel 10+
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/wildwestriverrider/laravel-ratings-and-reviews.svg?style=flat-square)](https://packagist.org/packages/wildwestriverrider/laravel-ratings-and-reviews)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/wildwestriverrider/laravel-ratings-and-reviews/run-tests?label=tests)](https://github.com/wildwestriverrider/laravel-ratings-and-reviews/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/wildwestriverrider/laravel-ratings-and-reviews/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/wildwestriverrider/laravel-ratings-and-reviews/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/wildwestriverrider/laravel-ratings-and-reviews.svg?style=flat-square)](https://packagist.org/packages/wildwestriverrider/laravel-ratings-and-reviews)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-ratings-and-reviews.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-ratings-and-reviews)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+This package allows you to add ratings and reviews to any model in your Laravel application.
 
 ## Installation
 
@@ -66,23 +58,33 @@ $laravelRatingsAndReviews = new Wildwestriverrider\LaravelRatingsAndReviews();
 composer test
 ```
 
-## Changelog
+[//]: # (## Changelog)
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+[//]: # ()
+[//]: # (Please see [CHANGELOG]&#40;CHANGELOG.md&#41; for more information on what has changed recently.)
 
-## Contributing
+[//]: # ()
+[//]: # (## Contributing)
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+[//]: # ()
+[//]: # (Please see [CONTRIBUTING]&#40;CONTRIBUTING.md&#41; for details.)
 
-## Security Vulnerabilities
+[//]: # ()
+[//]: # (## Security Vulnerabilities)
 
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+[//]: # ()
+[//]: # (Please review [our security policy]&#40;../../security/policy&#41; on how to report security vulnerabilities.)
 
-## Credits
+[//]: # ()
+[//]: # (## Credits)
 
-- [James Sweeney](https://github.com/wildwestriverrider)
-- [All Contributors](../../contributors)
+[//]: # ()
+[//]: # (- [James Sweeney]&#40;https://github.com/wildwestriverrider&#41;)
 
-## License
+[//]: # (- [All Contributors]&#40;../../contributors&#41;)
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+[//]: # ()
+[//]: # (## License)
+
+[//]: # ()
+[//]: # (The MIT License &#40;MIT&#41;. Please see [License File]&#40;LICENSE.md&#41; for more information.)
