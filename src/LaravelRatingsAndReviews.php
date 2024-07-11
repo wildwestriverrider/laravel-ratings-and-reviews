@@ -2,6 +2,4 @@
 
 namespace Wildwestriverrider\LaravelRatingsAndReviews;
 
-class LaravelRatingsAndReviews
-{
-}
+class LaravelRatingsAndReviews {}
