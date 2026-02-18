@@ -12,7 +12,6 @@ use InvalidArgumentException;
 class Rating extends Model
 {
     use HasFactory;
-    use SoftDeletes;
 
     protected $fillable = [
         'rating',
