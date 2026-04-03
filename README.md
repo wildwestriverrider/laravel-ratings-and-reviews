@@ -1,4 +1,4 @@
-# Ratings and reviews in Laravel 10+
+# Ratings and reviews for Laravel 10+
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/wildwestriverrider/laravel-ratings-and-reviews.svg?style=flat-square)](https://packagist.org/packages/wildwestriverrider/laravel-ratings-and-reviews)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/wildwestriverrider/laravel-ratings-and-reviews/run-tests?label=tests)](https://github.com/wildwestriverrider/laravel-ratings-and-reviews/actions?query=workflow%3Arun-tests+branch%3Amain)

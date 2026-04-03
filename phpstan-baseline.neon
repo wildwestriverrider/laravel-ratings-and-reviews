@@ -1,0 +1,31 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Access to an undefined property Wildwestriverrider\\LaravelRatingsAndReviews\\Models\\Rating\:\:\$rating\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Rating.php
+
+		-
+			message: '#^Trait Wildwestriverrider\\LaravelRatingsAndReviews\\Traits\\HasRatings is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/HasRatings.php
+
+		-
+			message: '#^Trait Wildwestriverrider\\LaravelRatingsAndReviews\\Traits\\HasReviews is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/HasReviews.php
+
+		-
+			message: '#^Trait Wildwestriverrider\\LaravelRatingsAndReviews\\Traits\\Rateable is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/Rateable.php
+
+		-
+			message: '#^Trait Wildwestriverrider\\LaravelRatingsAndReviews\\Traits\\Reviewable is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/Reviewable.php

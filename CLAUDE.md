@@ -41,8 +41,11 @@ The package uses four traits that work in pairs:
 - `HasRatings` - adds `ratingsGiven()`, `rate()`, `unrate()`, `hasRated()`, `getRatingFor()`
 - `HasReviews` - adds `reviewsWritten()`, `review()`, `unreview()`, `hasReviewed()`, `getReviewFor()`
 
+### Namespace
+`Wildwestriverrider\LaravelRatingsAndReviews`
+
 ### Models
-- `Rating` - polymorphic model with `author` and `rateable` morph relationships, soft deletes, validation against config values
+- `Rating` - polymorphic model with `author` and `rateable` morph relationships, validation against config min/max values (via `saving` event)
 - `Review` - polymorphic model with `author` and `reviewable` morph relationships, soft deletes, `approve()`/`unapprove()` methods
 
 ### Query Scopes
