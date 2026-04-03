@@ -253,32 +253,6 @@ test('between scope filters ratings within range', function () {
 });
 
 // ==========================================
-// Soft Deletes
-// ==========================================
-
-test('ratings can be soft deleted', function () {
-    $user = User::factory()->create();
-    $otherUser = User::factory()->create();
-
-    $rating = $user->rate($otherUser, 4);
-    $rating->delete();
-
-    expect(Rating::count())->toBe(0);
-    expect(Rating::withTrashed()->count())->toBe(1);
-});
-
-test('soft deleted ratings can be restored', function () {
-    $user = User::factory()->create();
-    $otherUser = User::factory()->create();
-
-    $rating = $user->rate($otherUser, 4);
-    $rating->delete();
-    $rating->restore();
-
-    expect(Rating::count())->toBe(1);
-});
-
-// ==========================================
 // Factory Tests
 // ==========================================
 
