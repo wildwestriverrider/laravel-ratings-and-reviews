@@ -47,9 +47,9 @@ test('rating must be within configured range', function () {
     $user = User::factory()->create();
     $otherUser = User::factory()->create();
 
-    expect(fn () => $user->rate($otherUser, 0))->toThrow(\InvalidArgumentException::class);
-    expect(fn () => $user->rate($otherUser, 6))->toThrow(\InvalidArgumentException::class);
-    expect(fn () => $user->rate($otherUser, -1))->toThrow(\InvalidArgumentException::class);
+    expect(fn () => $user->rate($otherUser, 0))->toThrow(InvalidArgumentException::class);
+    expect(fn () => $user->rate($otherUser, 6))->toThrow(InvalidArgumentException::class);
+    expect(fn () => $user->rate($otherUser, -1))->toThrow(InvalidArgumentException::class);
 });
 
 test('rating within range is accepted', function () {

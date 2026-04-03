@@ -4,7 +4,6 @@ namespace Wildwestriverrider\LaravelRatingsAndReviews;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Wildwestriverrider\LaravelRatingsAndReviews\Commands\LaravelRatingsAndReviewsCommand;
 
 class LaravelRatingsAndReviewsServiceProvider extends PackageServiceProvider
 {
