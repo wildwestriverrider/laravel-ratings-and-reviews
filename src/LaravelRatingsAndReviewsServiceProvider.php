@@ -4,6 +4,7 @@ namespace Wildwestriverrider\LaravelRatingsAndReviews;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Wildwestriverrider\LaravelRatingsAndReviews\Commands\LaravelRatingsAndReviewsCommand;
 
 class LaravelRatingsAndReviewsServiceProvider extends PackageServiceProvider
 {
@@ -18,5 +19,6 @@ class LaravelRatingsAndReviewsServiceProvider extends PackageServiceProvider
             ->name('laravel-ratings-and-reviews')
             ->hasConfigFile()
             ->hasMigration('create_ratings_and_reviews_table');
+        //->hasCommand(LaravelRatingsAndReviewsCommand::class);
     }
 }
